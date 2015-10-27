@@ -2,9 +2,6 @@
 Cactus c1;//Makes a place in memory to keep cactus
 Cactus c2;
 float cl;
-float dinoY;
-float dinoS;
-float dinoA;
 float gravity;
 float distance;
 float distance2;
@@ -62,11 +59,11 @@ void draw() {
   if (distance<(30+25)) {
     textSize(80);
     text("HIT", 100, 100);
-  }  
-  if (distance2<(30+25)) {
-    textSize(80);
+  
+ if (distance2<(30+25)) {
+   textSize(80);
     text("HIT", 100, 100);
-  }
+  
 
 
   //Stop the dino if it hits the ground
@@ -83,6 +80,6 @@ void draw() {
 
 //Jumps when pressed
 void keyPressed() {   
-  dinoA=-2;
-  gravity=0.25;
+  dinoA=-1;
+ if (dinoY>170);
 }

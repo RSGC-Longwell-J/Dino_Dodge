@@ -1,7 +1,6 @@
 class Cactus {
   //Global variables
   float x1;
-  float y1;
   float a1;
   float s1;
 
@@ -34,5 +33,13 @@ class Cactus {
     //Makes the cactus moves
     s1=s1+a1;
     x1=x1+s1;
+  }
+  
+  //get xx
+  //Purpose: to return the x position of the cactus
+  float getX(){
+    
+    return x1;
+    
   }
 }
