@@ -49,12 +49,11 @@ void draw() {
   text("distance is "+distance, 150, 100);
   text("distance2 is "+distance2, 150, 125);
 
-  if (distance<(30+25)) {
-    textSize(80);
-    text("HIT", 100, 100);
+void keyPressed(){
+  if (d1.getY()== 170) {
+    d1.setA(-1);
   }
-  if (distance2<(30+25)) {
-    textSize(80);
-    text("HIT", 100, 100);
+  
   }
-}
+ 
+  

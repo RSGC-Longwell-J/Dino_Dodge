@@ -40,10 +40,9 @@ class Dino {
   
   }
   
-  //Jumps when pressed
-void keyPressed() {   
-  dinoA=-1;
- if (dinoY>170);
-}
+//vo//id keyPressed(){
+//////dinoY=170;
+//////dinoS=-1;
+//}
 
 }//end class

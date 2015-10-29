@@ -4,7 +4,6 @@ class Cactus {
   float a1;
   float s1;
 
-
   //Constructor
   Cactus(float x_, float a_, float s_) {
     x1=x_;
