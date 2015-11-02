@@ -14,9 +14,9 @@ void setup() {
   //Variable value
   c1=new Cactus(1100, -0.1, -1);
   c2=new Cactus(1200, -0.1, -1);
-  d1=new Dino(170,-0,0);
-    cl=950;
-  gravity=0.06;
+  d1=new Dino(169, 0, 0);
+  cl=950;
+  gravity=0.05;
 }
 
 //Runs repetedly
@@ -41,19 +41,21 @@ void draw() {
   //Repeating variables values
   cl=cl-0.1;
 
-
-
+  //Game Over
+  if (d1.isTouching(c1)) {
+    textSize(80);
+  text("HIT", 400, 400);
+  noLoop(); //this stops it
+  }
   //show on screen
   fill(0);
   textSize(12);
   text("distance is "+distance, 150, 100);
   text("distance2 is "+distance2, 150, 125);
+}
 
-void keyPressed(){
+void keyPressed() {
   if (d1.getY()== 170) {
     d1.setA(-1);
   }
-  
-  }
- 
-  
+}
