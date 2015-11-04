@@ -43,8 +43,9 @@ void draw() {
 
   //Game Over
   if (d1.isTouching(c1)) {
+    fill(0);
     textSize(80);
-  text("HIT", 400, 400);
+  text("Game Over", 275, 100);
   noLoop(); //this stops it
   }
   //show on screen

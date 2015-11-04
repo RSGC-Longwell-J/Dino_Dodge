@@ -53,6 +53,17 @@ class Dino {
   void setA(float newA_) {
     dinoA = newA_;
   }
-  
+  boolean isTouching(Cactus c) {
+    
+    float a=dinoY-c.getY();
+    float b=dinoX-c.getX();
+    distance=sqrt(a*a+b*b);
+    
+    if (distance<(dinoR+ c.getR() *.75) ) {
+      return true;
+    }
+    
+    return false;
+  }
   
 }
